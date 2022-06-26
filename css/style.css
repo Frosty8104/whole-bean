@@ -85,11 +85,17 @@ form button {
 .menu, .products, h2, .signup img {
    margin-left: 15%;
 }
+.icon {
+    float: left;
+}
 .menu {
     float: left;
 }
 .products {
     float: left;
+}
+.reviews {
+    clear: both;
 }
 h3, .reviews p {
    padding-left: 15%;

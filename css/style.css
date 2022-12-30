@@ -1,4 +1,4 @@
- o/* BASE STYLES */
+/* BASE STYLES */
 html {
     font-size: 16px;
 }
@@ -11,6 +11,7 @@ header,
 footer,
 main {
     align-items: center;
+    background: url(../img/bean.png);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -36,7 +37,7 @@ ul {
 }
 /* HEADER */
 header {
-    background: #fff0be;
+    background: url(../img/bean.png) #fff0be;
     padding: 5% 0 5% 0;
 }
 #home {
@@ -48,7 +49,7 @@ header {
     width: 90%;
 }
 #home img {
-    padding: 0 2% 0 0;
+    padding: 0 3% 0 0;
     width: 15%;
 }
 img {
@@ -69,12 +70,11 @@ img {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 60%;
 }
 #home nav ul {
     padding: 0;
-    width: 100%;
 }
 #home nav ul li {
     display: inline-block;
@@ -88,10 +88,10 @@ img {
 }
 .date,
 .place {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
 }
 .date p,
@@ -100,29 +100,30 @@ img {
 }
 /* FOOTER */
 footer {
-    background: #ffffff;
-    padding: 0 0 5% 0;
+    background: url(../img/bean.png) #ffffff;
 }
 #contact {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 90%;
 }
+.info h3,
 .social h3 {
     font-size: 1em;
     font-weight: bold;
 }
-.social p {
-    font-size: 1em;
+.info p,
+.social ul {
+    width: 90%;
 }
 .social ul {
-    padding: 0 0 0 5%;
+    padding: 0;
 }
 .social ul li {
    display: inline-block;
-   padding: 0 0 0 5%;
+   padding: 0 5% 0 0;
 }
 .social ul li i {
     color: #be8b14;
@@ -130,7 +131,7 @@ footer {
 }
 /***** PHOTOS *****/
 main {
-    background: #ffffff;
+    background: url(../img/bean.png) #ffffff;
     padding: 5% 0 5% 0;
 }
 #photos {
@@ -154,7 +155,7 @@ img {
 }
 /***** OFFER *****/
 #offer {
-    background: #fff0be;
+    background: url(../img/bean.png) #fff0be;
     padding: 5% 0 5% 0;
 }
 .signup {
@@ -168,25 +169,24 @@ img {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    padding: 0 0 0 5%;
 }
 .signup form label {
-    padding: 0 2% 2% 0;
+    padding: 0 2% 5% 0;
     width: 45%;
 }
 .signup form input {
-    margin: 0 2% 2% 0;
-    width: 45%;
+    width: 50%;
 }
 .signup form label:nth-child(5) {
     align-items: center;
     display: flex;
-    justify-content: center;
-    width: 90%;
+    justify-content: flex-start;
+    width: 100%;
 }
 #txtEmail {
-    width: 90%;
+    width: 100%;
 }
 .signup button {
     align-items: center;
@@ -199,9 +199,10 @@ img {
     font-family: 'Corben', cursive;
     font-weight: 700;
     font-size: 1em;
+    margin: 5% 0 0 10%;
     justify-content: center;
     text-transform: uppercase;
-    width: 90%;
+    width: 80%;
 }
 .signup h2 {
     font-size: 1.125em;
@@ -209,7 +210,7 @@ img {
 }
 .signup img {
     padding: 5% 0 0 0;
-    width: 45%;
+    width: 90%;
 }
 img {
     width: 100%;
@@ -219,7 +220,7 @@ img {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 90%;
 }
 .menu p span, 
@@ -230,25 +231,22 @@ img {
 .menu p,
 .products p {
     font-size: 1em;
-    width: 90%;
+    width: 100%;
 }
 /***** REVIEWS *****/
 #reviews {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    padding: 5% 0 0 0;
+    justify-content: flex-start;
     width: 90%;
 }
 #reviews h3 {
     font-size: 1em;
     font-weight: bold;
-    width: 90%;
 }
 #reviews p {
     font-size: 1em;
-    width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -275,24 +273,39 @@ img {
     #home p {
         font-size: 1em;
     }
-    nav {
+    #home nav {
 
     }
-    nav ul {
+    #home nav ul {
 
     }
-    nav ul li {
-
+    #home nav ul li {
+    
     }
-    nav ul li a {
+    #home nav ul li a {
         font-size: 1.25em;
         font-weight: bold;
+    }
+    #home p {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
     .place p,
     .date p {
         font-size: 1em;
+        width: 45%;
+    } 
+    .date p {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
     }
     /***** FOOTER *****/
+    .info,
+    .social {
+        width: 45%;
+    }
     .info h3,
     .social h3 {
         font-size: 1.25em;
@@ -301,9 +314,14 @@ img {
     .info p,
     .social p {
         font-size: 1em;
+        width: 100%;
+    }
+    .social ul {
+        padding: 0 0 0 5%;
+        width: 90%;
     }
     .social ul li {
-   
+        display: inline-block;
     }
     .social ul li i {
         font-size: 2.5em;
@@ -313,6 +331,22 @@ img {
         font-size: 1em;
     }
     /***** OFFER *****/
+    .signup form {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 90%;
+    }
+    .signup form label:nth-child(5) {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        width: 45%;
+    }
+    #txtEmail {
+        width: 50%;
+    }
     .signup button {
         align-items: center;
         background: #be8b14;
@@ -323,28 +357,51 @@ img {
         flex-flow: row wrap;
         font-family: 'Corben', cursive;
         justify-content: center;
-        font-size: 2em;
+        font-size: 1.25em;
         text-transform: uppercase;
-        width: 40%;
+        width: 60%;
     }
     .signup h2 {
         font-size: 1.5em;
     }
-    .menu p span, 
-    .products p span {
-        font-size: 1em;
+    .menu,
+    .products {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 45%;
     }
-    .menu p,
+    .menu img,
+    .products img {
+        padding: 0 5% 0 0;
+        width: 30%;
+    }
+    .menu p span,
+    .menu p, 
+    .products p span,
     .products p {
         font-size: 1em;
     }
+    .menu .info,
+    .products .info {
+        width: 60%
+    }
     /***** REVIEWS *****/
+    #reviews {
+        width: 90%
+    }
     #reviews h3 {
         font-size: 1.25em;
         font-weight: bold;
+        width: 80%;
     }
     #reviews p {
+        align-items: center;
+        display: flex;
         font-size: 1em;
+        justify-content: space-between;
+        width: 40%;
     }
 }
 @media (min-width: 1200px) {
@@ -367,9 +424,11 @@ img {
     }
     #home h2 {
         font-size: 2.25em;
+        width: 55%;
     }
     #home p {
         font-size: 1em;
+        width: 65%;
     }
     nav {
 
@@ -398,17 +457,25 @@ img {
     .social p {
         font-size: 1em;
     }
+    .social ul {
+        padding: 0 0 0 5%;
+    }
     .social ul li {
-   
+        padding: 0 2% 0 0;
     }
     .social ul li i {
         font-size: 3em;
     }
     /***** PHOTOS *****/
+    #photos img {
+        padding: 0 0 0 2%;
+        width: 30%;
+    }
     #photos p {
         font-size: 1em;
     }
     /***** OFFER *****/
+
     .signup button {
         align-items: center;
         background: #be8b14;
@@ -421,7 +488,7 @@ img {
         justify-content: center;
         font-size: 2.5em;
         text-transform: uppercase;
-        width: 40%;
+        width: 50%;
     }
     .signup h2 {
         font-size: 2.25em;
